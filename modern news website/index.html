@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide News</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+</head>
+<body>
+
+<nav> 
+<div class="main-nav flex container">
+
+<a href="#">
+<img class = "logo" src = "WhatsApp Image 2024-11-19 at 10.46.59_ebbce2b8.jpg" alt = "WORLD BUZZ" width="100px" height="65px">
+</a>
+
+<div class="title"> 
+WORLD BUZZ 
+</div> 
+
+<div class="head-links">
+<ul class="flex">
+<li class="link-hover nav-item" id="NBA-news" onclick="on_nav_link_click('NBA-news')">NBA</li>
+<li class="link-hover nav-item" id="crypto-news" onclick="on_nav_link_click('crypto-news')">Crypto</li>
+<li class="link-hover nav-item" id="politics-news" onclick="on_nav_link_click('politics-news')">Politics</li>
+</ul>
+</div>
+
+<div class="search-bar">
+    <input id="search" class="news-fetch" placeholder="e.g. Artificial Intelligence"   >
+    <button id="button" class="search-button" >
+       Search
+    </button>
+</div>
+
+</div>
+</nav> 
+
+<main>
+ <div class="cards-container flex container" id="card-container">
+
+ </div> 
+
+
+</main>
+
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="image" id="news-img">
+        </div>
+        <div class="card-content"> 
+         <h3 class="news-title" id="news-title">title</h3>
+         <h6 class="news-date" id="news-date-source">by marca 21/11/2024</h6>
+         <p class="desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, obcaecati?</p> 
+        </div>
+     </div>    
+
+</template>
+<script src="index.js"></script>  
+</body>
+</html>
